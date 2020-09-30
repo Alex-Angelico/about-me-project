@@ -6,52 +6,48 @@ alert('Hi ' + userName + '. Let\'s start off with a fun 5-question game of Y/N t
 var answerCount = 0;
 
 var loveChocolate = prompt('Y/N: Alex loves chocolate.').toLowerCase();
-console.log(loveChocolate);
-if (loveChocolate === 'y' || 'yes') {
+if (loveChocolate === 'y' || loveChocolate === 'yes') {
+    // console.log("Q1 Correct");
     answerCount++;
     alert('Correct! Science has yet to prove I can survive without it. You now have ' + answerCount + '/5 correct answers. Next question...');
-} else if (loveChocolate === 'n' || 'no') {
-    console.log('TEST');
+} else if (loveChocolate === 'n' || loveChocolate === 'no') {
     alert('Incorrect! That\'s ' + answerCount + '/5 correct answers. Next question...');
 }
-console.log(answerCount);
+
 var favYellow = prompt('Y/N: Alex\'s favorite color is yellow.').toLowerCase();
-console.log(favYellow);
-if (favYellow === 'y' || 'yes') {
+if (favYellow === 'y' || favYellow === 'yes') {
+    // console.log("Q2 Correct");
     answerCount++;
     alert('Correct! Yellow is bright and warm, what\'s not to like? You now have ' + answerCount + '/5 correct answers. Next question...');
-} else if (favYellow === 'n' || 'no') {
-    console.log('TEST');
+} else if (favYellow === 'n' || favYellow === 'no') {
     alert('Incorrect! That\'s ' + answerCount + '/5 correct answers. Next question...');
 }
-console.log(answerCount);
+
 var ghostBelief = prompt('Y/N: Alex believes in ghosts.').toLowerCase();
-console.log(ghostBelief);
-if (ghostBelief === 'y' || 'yes') {
+if (ghostBelief === 'y' || ghostBelief === 'yes') {
     alert('Incorrect! That\'s ' + answerCount + '/5 correct answers. Next question...');
-} else if (ghostBelief === 'n' || 'no') {
-    console.log('TEST');
+} else if (ghostBelief === 'n' || ghostBelief === 'no') {
+    // console.log("Q3 Correct");
     answerCount++;
     alert('Correct! Boooooo, say I! You now have ' + answerCount + '/5 correct answers. Next question...');
 }
-console.log(answerCount);
+
 var indianFood = prompt('Y/N: Alex dislikes Indian food.').toLowerCase();
-console.log(indianFood);
-if (indianFood === 'y' || 'yes') {
+if (indianFood === 'y' || indianFood === 'yes') {
     alert('Incorrect! That\'s ' + answerCount + '/5 correct answers. Next question...');
-} else if (indianFood === 'n' || 'no') {
-    console.log('TEST');
+} else if (indianFood === 'n' || indianFood === 'no') {
+    // console.log("Q4 Correct");
     answerCount++;
     alert('Correct! I LOVE Indian food. You now have ' + answerCount + '/5 correct answers. Let\'s get on to the last question...');
 }
-console.log(answerCount);
+
 var awesomeQuiz = prompt('We\'re going to get meta with this one.\nY/N: This was an awesome quiz about Alex.').toLowerCase();
-console.log(awesomeQuiz);
-if (awesomeQuiz === 'y' || 'yes') {
+if (awesomeQuiz === 'y' || awesomeQuiz === 'yes') {
+    // console.log("Q5 Correct");
     answerCount++;
     alert('Aw, shucks! I\'m glad you think so. I would have given you the point either way on this one, but for what it\'s worth, you ended with ' + answerCount + '/5 correct answers. Enjoy the web page, ' + userName + '.');
-} else if (awesomeQuiz === 'n' || 'no') {
-    console.log('TEST');
+} else if (awesomeQuiz === 'n' || awesomeQuiz === 'no') {
+    // console.log("Q5 Correct");
     answerCount++;
     alert('Oh drat. Back to the drawing board. That\'s still worth a point to you though. You\'re finishing with ' + answerCount + '/5 correct answers. Have a good day, ' + userName + '!');
 }
