@@ -12,6 +12,9 @@ if (loveChocolate === 'y' || loveChocolate === 'yes') {
     alert('Correct! Science has yet to prove I can survive without it. You now have ' + answerCount + '/5 correct answers. Next question...');
 } else if (loveChocolate === 'n' || loveChocolate === 'no') {
     alert('Incorrect! That\'s ' + answerCount + '/5 correct answers. Next question...');
+} else {
+    answerCount = 0;
+    alert('You have dared insult the rules of Y/N trivia! No points for you, back to 0! Ahem, next question...')
 }
 
 var favYellow = prompt('Y/N: Alex\'s favorite color is yellow.').toLowerCase();
@@ -21,6 +24,9 @@ if (favYellow === 'y' || favYellow === 'yes') {
     alert('Correct! Yellow is bright and warm, what\'s not to like? You now have ' + answerCount + '/5 correct answers. Next question...');
 } else if (favYellow === 'n' || favYellow === 'no') {
     alert('Incorrect! That\'s ' + answerCount + '/5 correct answers. Next question...');
+} else {
+    answerCount = 0;
+    alert('You have dared insult the rules of Y/N trivia! No points for you, back to 0! Ahem, next question...')
 }
 
 var ghostBelief = prompt('Y/N: Alex believes in ghosts.').toLowerCase();
@@ -30,6 +36,9 @@ if (ghostBelief === 'y' || ghostBelief === 'yes') {
     // console.log("Q3 Correct");
     answerCount++;
     alert('Correct! Boooooo, say I! You now have ' + answerCount + '/5 correct answers. Next question...');
+} else {
+    answerCount = 0;
+    alert('You have dared insult the rules of Y/N trivia! No points for you, back to 0! Ahem, next question...')
 }
 
 var indianFood = prompt('Y/N: Alex dislikes Indian food.').toLowerCase();
@@ -39,6 +48,9 @@ if (indianFood === 'y' || indianFood === 'yes') {
     // console.log("Q4 Correct");
     answerCount++;
     alert('Correct! I LOVE Indian food. You now have ' + answerCount + '/5 correct answers. Let\'s get on to the last question...');
+} else {
+    answerCount = 0;
+    alert('You have dared insult the rules of Y/N trivia! No points for you, back to 0! May you redeem yourself with the last question...')
 }
 
 var awesomeQuiz = prompt('We\'re going to get meta with this one.\nY/N: This was an awesome quiz about Alex.').toLowerCase();
@@ -50,4 +62,7 @@ if (awesomeQuiz === 'y' || awesomeQuiz === 'yes') {
     // console.log("Q5 Correct");
     answerCount++;
     alert('Oh drat. Back to the drawing board. That\'s still worth a point to you though. You\'re finishing with ' + answerCount + '/5 correct answers. Have a good day, ' + userName + '!');
+} else {
+    answerCount = 0;
+    alert('Such insolence towards the rules of Y/N trivia! Here at the very end, of all places! That\'s 0/5 for you. Begone, ' + userName + '!')
 }
