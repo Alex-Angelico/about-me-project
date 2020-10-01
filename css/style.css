@@ -6,7 +6,7 @@ header, footer {
     text-align: center;
     background-color: skyblue;
     padding: 1px;
-    border-radius: 4%;
+    border-radius: 10px;
     border-style: solid;
     border-width: 1px;
 }
@@ -18,7 +18,7 @@ h1 {
 section {
     padding: 1px;
     margin: 5px;
-    border-radius: 4%;
+    border-radius: 10px;
     border-style: solid;
     border-width: 1px;
 }
