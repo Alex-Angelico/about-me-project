@@ -72,7 +72,7 @@ if (awesomeQuiz === 'y' || awesomeQuiz === 'yes') {
 
 alert('...');
 
-var number = 5;
+var number = Math.floor(Math.random() * 10) + 1;
 var guess = Number(prompt('Surprise! The quiz isn\'t really over, there\'s two more questions to go. But let\'s try something new...\n\nWhat number am I thinking of between 1 and 10? I\'ll give you four guesses.'));
 for (var i = 0; i < 4; i++) {
     if (guess === number && i <= 3) {
