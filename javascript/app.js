@@ -154,8 +154,10 @@ function question7(){
         if (shuttleChoice) {
         break;
         }
-    alert('Well, you ended up with ' + answerCount + '/7 points for the quiz, ' + userName + '. I hope you had fun! Now enjoy learning all about me on the page.');
+    // alert('Well, you ended up with ' + answerCount + '/7 points for the quiz, ' + userName + '. I hope you had fun! Now enjoy learning all about me on the page.');
     }
 }
 
 quiz();
+
+alert('Well, you ended up with ' + answerCount + '/7 points for the quiz, ' + userName + '. I hope you had fun! Now enjoy learning all about me on the page.');
