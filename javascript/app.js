@@ -2,6 +2,13 @@
 
 var answerCount = 0;
 
+function quiz(){
+    var quizQuestions = [userNameEntry(), question1(),question2(), question3(), question4(), question5(), alert('...'), question6(), question7()];
+    for(var h = 0; h < quizQuestions.length; h++){
+        var functionCall = quizQuestions[h];
+    }
+}
+
 function userNameEntry(){
     var userName = prompt('Welcome to my page. What\'s your name?');
     while (!userName) {
@@ -9,8 +16,6 @@ function userNameEntry(){
     }
     alert('Hi ' + userName + '. Let\'s start off with a fun 5-question game of Y/N trivia--about yours truly, Alex!');
 }
-
-
 
 function question1(){
     var loveChocolate = prompt('Y/N: Alex loves chocolate.').toLowerCase();
@@ -40,7 +45,6 @@ function question2(){
     }
 }
 
-
 function question3(){
     var ghostBelief = prompt('Y/N: Alex believes in ghosts.').toLowerCase();
     if (ghostBelief === 'y' || ghostBelief === 'yes') {
@@ -69,7 +73,6 @@ function question4(){
     }
 }
 
-
 function question5(){
     var awesomeQuiz = prompt('We\'re going to get meta with this one.\nY/N: This was an awesome quiz about Alex.').toLowerCase();
     if (awesomeQuiz === 'y' || awesomeQuiz === 'yes') {
@@ -85,9 +88,6 @@ function question5(){
         alert('Such insolence towards the rules of Y/N trivia! Here at the very end, of all places! And I would have given you a point either way on this one. Now you have none instead.')
     }
 }
-
-
-
 
 function question6(){
     var gameRandomNumber = Math.floor(Math.random() * 10) + 1;
@@ -158,13 +158,4 @@ function question7(){
     }
 }
 
-
-userNameEntry();
-question1();
-question2();
-question3();
-question4();
-question5();
-alert('...');
-question6();
-question7();
+quiz();
