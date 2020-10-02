@@ -92,7 +92,6 @@ function question5() {
         answerCount = 0;
         alert('Such insolence towards the rules of Y/N trivia! Here at the very end, of all places! And I would have given you a point either way on this one. Now you have none instead.');
     }
-    alert('...')
 }
 
 function question6() {

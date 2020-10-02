@@ -7,8 +7,6 @@ Authors: Alex Angelico, Ricardo Barcenas
 
 ## Program Manual
 
-
-
 ## Technical Resources
 
 - [Use of the Number() function](https://www.dyn-web.com/javascript/type/)
