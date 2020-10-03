@@ -37,28 +37,12 @@ h1 {
 section {
     padding: 1px;
     margin: 5px;
-    /* border-radius: 3px; */
     border-style: solid;
     border-width: 7px;
     color: white;
     background-color: rgba(80, 179, 170, 85%);
     text-align: justify;
     text-justify: inter-word;
-}
-
-#intro {
-    
-}
-
-#history {
-    /* background-color: burlywood; */
-    /*  */
-}
-
-#interests {
-    /* background-color: burlywood; */
-    /* background: url(http://fractalsponge.net/wp/wp-content/uploads/2016/03/fleet_review.jpg); */
-    
 }
 
 article {
