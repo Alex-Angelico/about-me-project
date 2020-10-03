@@ -162,4 +162,46 @@ function question7() {
     }
 }
 
-quiz();
+//quiz();
+
+function userInput() {
+    var ideaCount = 0;
+    var newIdeas = [];
+    var shareChoice = '';
+    alert('Here\'s something you can help me with! I would love to hear any ideas you have for how I could improve the site.\n\nIt could be about the quiz, or new information to add, my visual style, or anything really.');
+    while (shareChoice !== 'n' && shareChoice !== 'no') {
+        shareChoice = prompt('Do you have an idea you would like to share? Y/N').toLowerCase();
+        if (shareChoice === 'y' || shareChoice === 'yes') {
+            ideaCount++;
+            var userIdea = prompt('Write it down here.');
+            newIdeas.push(ideaCount + ':' + userIdea);
+        // } else if (shareChoice === 'n' || shareChoice === 'no') {
+        //     alert('No worries. Returning you to the main page.');
+        //     break;
+        } else {
+            continue;
+        }
+
+    }
+    var i = 0
+    if (ideaCount > 1) {
+        while (i < newIdeas.length) {
+            newIdeas.splice(newIdeas[i], 0, '\n')
+        }
+        for (var j = 0; j < newIdeas.length; j++) {
+            // document.write(newIdeas[j]);
+            console.log(newIdeas[j]);
+        }
+        //var deleteIdea = prompt('Before we go, have a look at your list of ideas. Any thing you wish to delete?')
+    } else if (ideaCount === 1) {
+        alert('Thanks for the suggestion.');
+        // document.write(newIdeas);
+        console.log(newIdeas);
+    } else {
+        alert('No worries. Returning you to the main page.');
+    }
+    // for (var j = 0; j < newIdeas.length; j++) {
+    //     document.write(newIdeas[j]);
+}
+
+// userInput();
